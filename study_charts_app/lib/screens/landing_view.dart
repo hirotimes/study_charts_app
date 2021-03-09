@@ -16,7 +16,6 @@ class _Landing extends StatefulWidget {
 }
 
 class _LandingState extends State<_Landing> {
-  final _formKey = GlobalKey<FormState>();
 
   @override
   void initState() {
@@ -71,6 +70,60 @@ class _LandingState extends State<_Landing> {
                           child: const Text('stacked bar charts'),
                           onPressed: () {
                             Navigator.pushNamed(context, '/stacked_bar_charts');
+                          },
+                          highlightElevation: 16,
+                          highlightColor: Colors.blue,
+                          onHighlightChanged: (value) {},
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 16),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text(
+                          'パイチャート : ',
+                        ),
+                        RaisedButton(
+                          child: const Text('auto label pie charts'),
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/pie_charts');
+                          },
+                          highlightElevation: 16,
+                          highlightColor: Colors.blue,
+                          onHighlightChanged: (value) {},
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 16),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text(
+                          '時間バーチャート : ',
+                        ),
+                        RaisedButton(
+                          child: const Text('time charts'),
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/time_charts');
+                          },
+                          highlightElevation: 16,
+                          highlightColor: Colors.blue,
+                          onHighlightChanged: (value) {},
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 16),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Text(
+                          'mock : ',
+                        ),
+                        RaisedButton(
+                          child: const Text('mock'),
+                          onPressed: () {
+                            Navigator.pushNamed(context, '/mock');
                           },
                           highlightElevation: 16,
                           highlightColor: Colors.blue,
